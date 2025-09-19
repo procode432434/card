@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 2.5rem;
+}
+
+.two {
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+.three {
+  font-size: 3rem;
+}
+
+.Picture {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+#o {
+  width: 300px;
+  height: 400px;
+}
+
+#on {
+  width: 300px;
+  height: 350px;
+}
+
+#one {
+  width: 250px;
+  height: 300px;
+}
+#cone{
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.text_emo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 60px;
+  padding-left: 24px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.Picture-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 60px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ali {
+  width: 310px;
+  height: 60px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.alig {
+  width: 310px;
+  margin-right: 150px;
+  text-align: center;
+  height: 60px;
+}
+
+.text_1 {
+  font-size: 40px;
+  margin-left: -150px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text_1 span {
+  white-space: nowrap;
+  text-align: center;
+  padding-right: 200px;
+}
+
+/* --------------------- */
+/* Other styles          */
+/* --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Caveat', serif;
+  overflow: hidden;
+  background-color: #fff;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+/* ---------- Responsive sizes for different devices ---------- */
+/* Small phones */
+@media (max-width: 480px) {
+  .Picture-img {
+    width: 300px;
+    height: auto;
+  }
+
+  #o {
+    width: 300px;
+    height: 300px;
+  }
+
+  #on {
+    width: 300px;
+    height: 300px;
+  }
+
+  #one {
+    width: 250px;
+    height: auto;
+  }
+
+  .Picture-note {
+    width: 300px;
+    height: auto;
+    min-height: 48px;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+  }
+
+  .text_1 {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Tablets / small laptops */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .Picture-img {
+    width: 300px;
+    max-width: 320px;
+    height: auto;
+  }
+
+  #o {
+    width: 300px;
+    max-width: 320px;
+    height: auto;
+  }
+
+  #on {
+    width: 300px;
+    max-width: 320px;
+    height: auto;
+  }
+
+  #one {
+    width: 250px;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .Picture-note {
+    width: 300px;
+    max-width: 320px;
+    height: auto;
+    min-height: 56px;
+    font-size: 1.25rem;
+    padding: 10px 16px;
+  }
+
+  .text_1 {
+    font-size: 34px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .Picture-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  #o {
+    width: 360px;
+    height: 450px;
+  }
+
+  #on {
+    width: 360px;
+    height: 400px;
+  }
+
+  #one {
+    width: 300px;
+    height: 400px;
+  }
+
+  .Picture-note {
+    width: 360px;
+    height: auto;
+    min-height: 64px;
+    font-size: 1.5rem;
+    padding: 12px 24px;
+  }
+
+  .text_1 {
+    font-size: 48px;
+  }
+}
